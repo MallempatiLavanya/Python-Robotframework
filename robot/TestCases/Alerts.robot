@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Handle Alerts
+    [Tags]    Sanity
     open browser    http://testautomationpractice.blogspot.com/    chrome
     click element    xpath://*[@id="HTML9"]/div[1]/button
     #handle alert    accept
