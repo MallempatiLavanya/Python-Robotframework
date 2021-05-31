@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.9.1 on win32)" generated="20210530 21:13:05.585" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="MultipleBrowsers" source="C:\Users\40006197\PycharmProjects\robot\TestCases\MultipleBrowsers.robot">
+<test id="s1-s1-t1" name="MultipleBrowsers Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:06.019" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:12.161" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:09.865" endtime="20210530 21:13:12.161"/>
+</kw>
+<msg timestamp="20210530 21:13:12.161" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:12.164" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:06.019" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${browser1_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.165"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${browser1_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.165" endtime="20210530 21:13:12.165"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:06.018" endtime="20210530 21:13:12.165">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:05.662" endtime="20210530 21:13:12.177"/>
+</suite>
+<status status="FAIL" starttime="20210530 21:13:05.588" endtime="20210530 21:13:12.178"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="MultipleBrowsers">Suites.MultipleBrowsers</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210530 21:13:12.161" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+</errors>
+</robot>

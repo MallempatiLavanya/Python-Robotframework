@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.9.1 on win32)" generated="20210530 21:13:19.986" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TabbedWindows" source="C:\Users\40006197\PycharmProjects\robot\TestCases\TabbedWindows.robot">
+<test id="s1-s1-t1" name="Tabbed windows">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demo.automationtesting.in/Windows.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:20.328" level="INFO">Opening browser 'chrome' to base url 'http://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20210530 21:13:20.327" endtime="20210530 21:13:25.188"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>click</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:25.189" level="INFO">Clicking button 'click'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:25.202" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:25.193" endtime="20210530 21:13:25.202"/>
+</kw>
+<msg timestamp="20210530 21:13:25.202" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:25.354" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:25.189" endtime="20210530 21:13:25.354"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>SeleniumHQ Browser Automation</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:25.354" endtime="20210530 21:13:25.354"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[4]/div[1]/div[2]/a/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:25.355" endtime="20210530 21:13:25.355"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:25.355" endtime="20210530 21:13:25.355"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:20.325" endtime="20210530 21:13:25.355">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:20.024" endtime="20210530 21:13:25.415"/>
+</suite>
+<status status="FAIL" starttime="20210530 21:13:19.988" endtime="20210530 21:13:25.417"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TabbedWindows">Suites.TabbedWindows</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210530 21:13:25.202" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+</errors>
+</robot>

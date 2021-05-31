@@ -1,0 +1,22 @@
+[ ERROR ] Error in file 'C:\Users\40006197\PycharmProjects\robot\TestCases\DataDrivenTesting.robot' on line 2: Importing library 'Selenium Library' failed: ModuleNotFoundError: No module named 'Selenium Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\40006197\AppData\Local\Programs\Python\Python39\Scripts\robot.exe
+  c:\users\40006197\appdata\local\programs\python\python39\python39.zip
+  c:\users\40006197\appdata\local\programs\python\python39\DLLs
+  c:\users\40006197\appdata\local\programs\python\python39\lib
+  c:\users\40006197\appdata\local\programs\python\python39
+  c:\users\40006197\appdata\local\programs\python\python39\lib\site-packages
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+

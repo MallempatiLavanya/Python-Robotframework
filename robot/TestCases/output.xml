@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 4.0.2 (Python 3.9.1 on win32)" generated="20210530 21:14:25.013" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Alerts" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Alerts.robot">
+<test id="s1-s1-t1" name="Handle Alerts">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:07.410" level="INFO">Opening browser 'chrome' to base url 'http://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20210530 21:12:07.409" endtime="20210530 21:12:24.193"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="HTML9"]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:24.194" level="INFO">Clicking element 'xpath://*[@id="HTML9"]/div[1]/button'.</msg>
+<status status="PASS" starttime="20210530 21:12:24.193" endtime="20210530 21:12:24.340"/>
+</kw>
+<kw name="Alert Should Not Be Present" library="SeleniumLibrary">
+<arg>Press a button!</arg>
+<doc>Verifies that no alert is present.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:24.361" level="FAIL">UnexpectedAlertPresentException: Alert Text: Press a button!
+Message: unexpected alert open: {Alert text : Press a button!}
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:24.348" endtime="20210530 21:12:24.361"/>
+</kw>
+<msg timestamp="20210530 21:12:24.361" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Press a button!
+Message: unexpected alert open: {Alert text : Press a button!}
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:24.409" level="FAIL">ValueError: Invalid alert action 'PRESS A BUTTON!'.</msg>
+<status status="FAIL" starttime="20210530 21:12:24.341" endtime="20210530 21:12:24.409"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:07.409" endtime="20210530 21:12:24.410">ValueError: Invalid alert action 'PRESS A BUTTON!'.</status>
+</test>
+<status status="FAIL" starttime="20210530 21:12:07.165" endtime="20210530 21:12:24.483"/>
+</suite>
+<suite id="s1-s2" name="MultipleBrowsers" source="C:\Users\40006197\PycharmProjects\robot\TestCases\MultipleBrowsers.robot">
+<test id="s1-s2-t1" name="MultipleBrowsers Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:06.019" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:12.161" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:09.865" endtime="20210530 21:13:12.161"/>
+</kw>
+<msg timestamp="20210530 21:13:12.161" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:12.164" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:06.019" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.164"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${browser1_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.164" endtime="20210530 21:13:12.165"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${browser1_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:12.165" endtime="20210530 21:13:12.165"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:06.018" endtime="20210530 21:13:12.165">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:05.662" endtime="20210530 21:13:12.177"/>
+</suite>
+<suite id="s1-s3" name="ScrollingPage" source="C:\Users\40006197\PycharmProjects\robot\TestCases\ScrollingPage.robot">
+<test id="s1-s3-t1" name="Scrolling tests">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.countries-ofthe-world.com/flags-of-the-world.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:13.727" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<status status="PASS" starttime="20210530 21:13:13.726" endtime="20210530 21:13:18.032"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:18.053" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:18.036" endtime="20210530 21:13:18.053"/>
+</kw>
+<msg timestamp="20210530 21:13:18.053" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:18.058" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:18.032" endtime="20210530 21:13:18.059"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:18.059" endtime="20210530 21:13:18.059"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:18.059" endtime="20210530 21:13:18.060"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:18.060" endtime="20210530 21:13:18.060"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:13.725" endtime="20210530 21:13:18.061">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:13.404" endtime="20210530 21:13:18.063"/>
+</suite>
+<suite id="s1-s4" name="SetupTerdown" source="C:\Users\40006197\PycharmProjects\robot\TestCases\SetupTerdown.robot">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Opening browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:18.998" endtime="20210530 21:13:18.998"/>
+</kw>
+<test id="s1-s4-t1" name="TC1">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Login to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:18.999" endtime="20210530 21:13:18.999"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is TC1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:18.999" endtime="20210530 21:13:18.999"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Logout to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:18.999" endtime="20210530 21:13:19.000"/>
+</kw>
+<status status="PASS" starttime="20210530 21:13:18.998" endtime="20210530 21:13:19.000"/>
+</test>
+<test id="s1-s4-t2" name="TC2">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Login to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:19.130" endtime="20210530 21:13:19.130"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is TC2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:19.131" endtime="20210530 21:13:19.131"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Logout to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:19.131" endtime="20210530 21:13:19.131"/>
+</kw>
+<status status="PASS" starttime="20210530 21:13:19.130" endtime="20210530 21:13:19.131"/>
+</test>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Closing browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:19.132" endtime="20210530 21:13:19.132"/>
+</kw>
+<status status="PASS" starttime="20210530 21:13:18.995" endtime="20210530 21:13:19.132"/>
+</suite>
+<suite id="s1-s5" name="TC1" source="C:\Users\40006197\PycharmProjects\robot\TestCases\TC1.robot">
+<test id="s1-s5-t1" name="LoginTest1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:20.278" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:28.796" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:26.758" endtime="20210530 21:13:28.796"/>
+</kw>
+<msg timestamp="20210530 21:13:28.796" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:28.826" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:20.277" endtime="20210530 21:13:28.826"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:28.826" endtime="20210530 21:13:28.826"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanLtraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:28.827" endtime="20210530 21:13:28.827"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:28.827" endtime="20210530 21:13:28.827"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='button-1 login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:28.827" endtime="20210530 21:13:28.827"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:28.827" endtime="20210530 21:13:28.827"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:20.276" endtime="20210530 21:13:28.828">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<test id="s1-s5-t2" name="LoginTest2">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:28.925" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20210530 21:13:28.924" endtime="20210530 21:13:40.315"/>
+</kw>
+<kw name="loginToApplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:40.317" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20210530 21:13:40.316" endtime="20210530 21:13:41.515"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanLtraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:41.516" level="INFO">Typing text 'pavanLtraining@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:13:41.516" endtime="20210530 21:13:41.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:41.616" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:13:41.616" endtime="20210530 21:13:41.716"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='button-1 login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:41.717" level="INFO">Clicking element 'xpath://button[@class='button-1 login-button']'.</msg>
+<status status="PASS" starttime="20210530 21:13:41.716" endtime="20210530 21:13:41.789"/>
+</kw>
+<status status="PASS" starttime="20210530 21:13:40.315" endtime="20210530 21:13:41.789"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210530 21:13:41.789" endtime="20210530 21:13:45.379"/>
+</kw>
+<status status="PASS" starttime="20210530 21:13:28.923" endtime="20210530 21:13:45.379"/>
+</test>
+<status status="FAIL" starttime="20210530 21:13:19.968" endtime="20210530 21:13:45.380"/>
+</suite>
+<suite id="s1-s6" name="TabbedWindows" source="C:\Users\40006197\PycharmProjects\robot\TestCases\TabbedWindows.robot">
+<test id="s1-s6-t1" name="Tabbed windows">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demo.automationtesting.in/Windows.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:20.328" level="INFO">Opening browser 'chrome' to base url 'http://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20210530 21:13:20.327" endtime="20210530 21:13:25.188"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>click</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:25.189" level="INFO">Clicking button 'click'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:25.202" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:25.193" endtime="20210530 21:13:25.202"/>
+</kw>
+<msg timestamp="20210530 21:13:25.202" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:25.354" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:25.189" endtime="20210530 21:13:25.354"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>SeleniumHQ Browser Automation</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:25.354" endtime="20210530 21:13:25.354"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[4]/div[1]/div[2]/a/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:25.355" endtime="20210530 21:13:25.355"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:25.355" endtime="20210530 21:13:25.355"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:20.325" endtime="20210530 21:13:25.355">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:20.024" endtime="20210530 21:13:25.415"/>
+</suite>
+<suite id="s1-s7" name="Table" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Table.robot">
+<test id="s1-s7-t1" name="Table validation">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:26.946" level="INFO">Opening browser 'chrome' to base url 'http://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20210530 21:13:26.945" endtime="20210530 21:13:45.904"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210530 21:13:45.904" endtime="20210530 21:13:46.032"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${row}</var>
+<arg>xpath://table[@name='BookTable']//tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20210530 21:13:46.055" level="INFO">${row} = 7</msg>
+<status status="PASS" starttime="20210530 21:13:46.032" endtime="20210530 21:13:46.055"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${col}</var>
+<arg>xpath://table[@name='BookTable']//th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20210530 21:13:46.070" level="INFO">${col} = 4</msg>
+<status status="PASS" starttime="20210530 21:13:46.055" endtime="20210530 21:13:46.070"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${row}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.070" endtime="20210530 21:13:46.071"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${col}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.071" endtime="20210530 21:13:46.071"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>xpath://table[@name='BookTable']//tr[2]//td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:13:46.108" level="INFO">${value} = Learn Selenium</msg>
+<status status="PASS" starttime="20210530 21:13:46.071" endtime="20210530 21:13:46.108"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.108" endtime="20210530 21:13:46.108"/>
+</kw>
+<kw name="Table Column Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" starttime="20210530 21:13:46.109" endtime="20210530 21:13:46.182"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>4</arg>
+<arg>Learn JS</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" starttime="20210530 21:13:46.182" endtime="20210530 21:13:46.253"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20210530 21:13:46.316" level="INFO">Table cell contains 'Mukesh'.</msg>
+<status status="PASS" starttime="20210530 21:13:46.254" endtime="20210530 21:13:46.316"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" starttime="20210530 21:13:46.316" endtime="20210530 21:13:46.354"/>
+</kw>
+<status status="PASS" starttime="20210530 21:13:26.945" endtime="20210530 21:13:46.354"/>
+</test>
+<status status="PASS" starttime="20210530 21:13:26.646" endtime="20210530 21:13:46.355"/>
+</suite>
+<suite id="s1-s8" name="Tags" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Tags.robot">
+<test id="s1-s8-t1" name="TC1 User registration test">
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is user re test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.253" endtime="20210530 21:13:46.254"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>reg test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.254" endtime="20210530 21:13:46.254"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20210530 21:13:46.253" endtime="20210530 21:13:46.254"/>
+</test>
+<test id="s1-s8-t2" name="TC2">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is login test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.293" endtime="20210530 21:13:46.293"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>login test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.293" endtime="20210530 21:13:46.293"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20210530 21:13:46.292" endtime="20210530 21:13:46.293"/>
+</test>
+<test id="s1-s8-t3" name="TC3">
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is changing user settings test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.294" endtime="20210530 21:13:46.294"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Chaning user settings test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.294" endtime="20210530 21:13:46.294"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20210530 21:13:46.294" endtime="20210530 21:13:46.295"/>
+</test>
+<test id="s1-s8-t4" name="TC4">
+<kw name="Log To Console" library="BuiltIn">
+<arg>This is logout test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.295" endtime="20210530 21:13:46.295"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Logout test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:13:46.295" endtime="20210530 21:13:46.296"/>
+</kw>
+<tag>Regression</tag>
+<tag>sanity</tag>
+<status status="PASS" starttime="20210530 21:13:46.295" endtime="20210530 21:13:46.296"/>
+</test>
+<status status="PASS" starttime="20210530 21:13:46.249" endtime="20210530 21:13:46.296"/>
+</suite>
+<suite id="s1-s9" name="UserKeywords" source="C:\Users\40006197\PycharmProjects\robot\TestCases\UserKeywords.robot">
+<test id="s1-s9-t1" name="TC1">
+<kw name="launchBrowser1" library="resources">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:47.304" level="INFO">Opening browser 'chrome' to base url 'http://demo.guru99.com/test/newtours/index.php'.</msg>
+<status status="PASS" starttime="20210530 21:13:47.304" endtime="20210530 21:14:12.405"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:14:12.415" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:14:12.407" endtime="20210530 21:14:12.415"/>
+</kw>
+<msg timestamp="20210530 21:14:12.415" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:14:12.544" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:14:12.405" endtime="20210530 21:14:12.545"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:47.303" endtime="20210530 21:14:12.545"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:userName</arg>
+<arg>mercury</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:12.545" endtime="20210530 21:14:12.546"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>mercury</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:12.546" endtime="20210530 21:14:12.546"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:47.302" endtime="20210530 21:14:12.546">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<test id="s1-s9-t2" name="TC2">
+<kw name="launchBrowser2" library="resources">
+<var>${app_title}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:14:12.731" level="INFO">Opening browser 'chrome' to base url 'http://demo.guru99.com/test/newtours/index.php'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:14:23.761" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:14:21.341" endtime="20210530 21:14:23.761"/>
+</kw>
+<msg timestamp="20210530 21:14:23.761" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:14:23.763" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:14:12.730" endtime="20210530 21:14:23.763"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:23.763" endtime="20210530 21:14:23.763"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:23.763" endtime="20210530 21:14:23.763"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:14:12.730" endtime="20210530 21:14:23.764"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${app_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:23.764" endtime="20210530 21:14:23.764"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:userName</arg>
+<arg>mercury</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:23.764" endtime="20210530 21:14:23.764"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>mercury</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:23.764" endtime="20210530 21:14:23.764"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:14:12.729" endtime="20210530 21:14:23.764">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:47.048" endtime="20210530 21:14:23.765"/>
+</suite>
+<suite id="s1-s10" name="Waits" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Waits.robot">
+<test id="s1-s10-t1" name="Testcases related to waits">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:47.372" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20210530 21:13:47.372" endtime="20210530 21:14:09.763"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210530 21:14:09.763" endtime="20210530 21:14:09.884"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>2 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210530 21:14:09.884" endtime="20210530 21:14:09.886"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210530 21:14:09.886" endtime="20210530 21:14:09.886"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>F</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20210530 21:14:09.887" level="INFO">Selecting 'F' from radio button 'Gender'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:14:21.949" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:14:17.933" endtime="20210530 21:14:21.950"/>
+</kw>
+<msg timestamp="20210530 21:14:21.950" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:14:22.297" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:14:09.886" endtime="20210530 21:14:22.297"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<arg>lavanya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:22.297" endtime="20210530 21:14:22.297"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:LastName</arg>
+<arg>lavi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:22.298" endtime="20210530 21:14:22.298"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>lavanay@abc.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:22.298" endtime="20210530 21:14:22.298"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>lavanya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:22.298" endtime="20210530 21:14:22.298"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<arg>lavanya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:22.298" endtime="20210530 21:14:22.298"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210530 21:14:22.298" endtime="20210530 21:14:22.298"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:47.371" endtime="20210530 21:14:22.298">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:47.128" endtime="20210530 21:14:22.406"/>
+</suite>
+<suite id="s1-s11" name="Capturescreenshot" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Capturescreenshot.robot">
+<test id="s1-s11-t1" name="TC!">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:07.416" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210530 21:12:07.416" endtime="20210530 21:12:18.104"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210530 21:12:18.105" endtime="20210530 21:12:18.401"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:18.402" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20210530 21:12:18.401" endtime="20210530 21:12:18.535"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:18.536" level="INFO">Typing text 'admin123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20210530 21:12:18.535" endtime="20210530 21:12:18.647"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://*[@id="divLogo"]/img</arg>
+<arg>C:/Users/40006197/PycharmProjects/robot/TestCases/logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20210530 21:12:18.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logo.png"&gt;&lt;img src="logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210530 21:12:18.647" endtime="20210530 21:12:18.824"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/40006197/PycharmProjects/robot/TestCases/fullpage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:19.012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="fullpage.png"&gt;&lt;img src="fullpage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210530 21:12:18.824" endtime="20210530 21:12:19.012"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:07.415" endtime="20210530 21:12:19.012"/>
+</test>
+<status status="PASS" starttime="20210530 21:12:07.181" endtime="20210530 21:12:19.014"/>
+</suite>
+<suite id="s1-s12" name="Data Excel" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Data_Excel.robot">
+<kw name="Open my browser" library="Testdata" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:21.098" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20210530 21:12:21.097" endtime="20210530 21:12:33.202"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210530 21:12:33.202" endtime="20210530 21:12:33.326"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:21.097" endtime="20210530 21:12:33.326"/>
+</kw>
+<test id="s1-s12-t1" name="Logintestwithexcel using admin@yourstore.com and adm">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:33.328" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:12:33.328" endtime="20210530 21:12:33.483"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:33.327" endtime="20210530 21:12:33.483"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:33.484" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:12:33.483" endtime="20210530 21:12:33.606"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:33.483" endtime="20210530 21:12:33.606"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:33.608" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210530 21:12:33.607" endtime="20210530 21:12:35.605"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:33.606" endtime="20210530 21:12:35.605"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210530 21:12:35.632" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20210530 21:12:35.606" endtime="20210530 21:12:35.632"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:35.605" endtime="20210530 21:12:35.632"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:33.327" endtime="20210530 21:12:35.632"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:33.326" endtime="20210530 21:12:35.632"/>
+</test>
+<test id="s1-s12-t2" name="Logintestwithexcel using adm@yourstore.com and admin">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:35.936" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:12:35.935" endtime="20210530 21:12:36.057"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:35.933" endtime="20210530 21:12:36.059"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:36.062" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:12:36.062" endtime="20210530 21:12:36.200"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:36.060" endtime="20210530 21:12:36.200"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:36.201" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210530 21:12:36.201" endtime="20210530 21:12:38.147"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:36.200" endtime="20210530 21:12:38.148"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210530 21:12:38.162" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20210530 21:12:38.148" endtime="20210530 21:12:38.163"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:38.148" endtime="20210530 21:12:38.163"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:35.932" endtime="20210530 21:12:38.163"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:35.633" endtime="20210530 21:12:38.163"/>
+</test>
+<test id="s1-s12-t3" name="Logintestwithexcel using adm@yourstore.com and adm">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:38.165" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:12:38.165" endtime="20210530 21:12:38.268"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:38.164" endtime="20210530 21:12:38.269"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:38.270" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:12:38.269" endtime="20210530 21:12:38.383"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:38.269" endtime="20210530 21:12:38.383"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:38.384" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210530 21:12:38.384" endtime="20210530 21:12:39.346"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:38.383" endtime="20210530 21:12:39.346"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210530 21:12:39.362" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20210530 21:12:39.347" endtime="20210530 21:12:39.393"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.346" endtime="20210530 21:12:39.393"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:38.164" endtime="20210530 21:12:39.393"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:38.163" endtime="20210530 21:12:39.394"/>
+</test>
+<kw name="Close my browser" library="Testdata" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210530 21:12:39.396" endtime="20210530 21:12:42.082"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.395" endtime="20210530 21:12:42.082"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:20.793" endtime="20210530 21:12:42.082"/>
+</suite>
+<suite id="s1-s13" name="DataDrivenTesting" source="C:\Users\40006197\PycharmProjects\robot\TestCases\DataDrivenTesting.robot">
+<kw name="Open my browser" library="Testdata" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:25.753" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20210530 21:12:25.753" endtime="20210530 21:12:37.433"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210530 21:12:37.433" endtime="20210530 21:12:37.564"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:25.753" endtime="20210530 21:12:37.564"/>
+</kw>
+<test id="s1-s13-t1" name="Right user empty pwd">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:37.566" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:12:37.566" endtime="20210530 21:12:37.723"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:37.566" endtime="20210530 21:12:37.723"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:37.724" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:12:37.724" endtime="20210530 21:12:37.827"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:37.723" endtime="20210530 21:12:37.828"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:37.828" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210530 21:12:37.828" endtime="20210530 21:12:39.587"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:37.828" endtime="20210530 21:12:39.587"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210530 21:12:39.618" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20210530 21:12:39.588" endtime="20210530 21:12:39.618"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.588" endtime="20210530 21:12:39.618"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:37.565" endtime="20210530 21:12:39.619"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:37.564" endtime="20210530 21:12:39.619"/>
+</test>
+<test id="s1-s13-t2" name="Right user wrong pwd">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>xyz</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:39.730" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:12:39.729" endtime="20210530 21:12:39.892"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.728" endtime="20210530 21:12:39.893"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:39.895" level="INFO">Typing text 'xyz' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:12:39.894" endtime="20210530 21:12:40.034"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.893" endtime="20210530 21:12:40.034"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:40.035" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210530 21:12:40.035" endtime="20210530 21:12:40.658"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:40.035" endtime="20210530 21:12:40.659"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210530 21:12:40.677" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20210530 21:12:40.660" endtime="20210530 21:12:40.677"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:40.659" endtime="20210530 21:12:40.677"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.727" endtime="20210530 21:12:40.678"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:39.669" endtime="20210530 21:12:40.678"/>
+</test>
+<test id="s1-s13-t3" name="Wrong user right pwd">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:40.681" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20210530 21:12:40.680" endtime="20210530 21:12:40.804"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:40.680" endtime="20210530 21:12:40.805"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:40.806" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20210530 21:12:40.805" endtime="20210530 21:12:40.909"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:40.805" endtime="20210530 21:12:40.910"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:40.911" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210530 21:12:40.911" endtime="20210530 21:12:42.646"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:40.910" endtime="20210530 21:12:42.647"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:42.679" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:42.654" endtime="20210530 21:12:42.679"/>
+</kw>
+<msg timestamp="20210530 21:12:42.679" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:42.981" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:42.649" endtime="20210530 21:12:42.981"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:42.647" endtime="20210530 21:12:42.981"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:40.679" endtime="20210530 21:12:42.982"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:40.678" endtime="20210530 21:12:42.982">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<test id="s1-s13-t4" name="Wrong user empty pwd">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:42.985" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:42.992" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:42.987" endtime="20210530 21:12:42.992"/>
+</kw>
+<msg timestamp="20210530 21:12:42.992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:43.233" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:42.984" endtime="20210530 21:12:43.233"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:42.984" endtime="20210530 21:12:43.233"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20210530 21:12:43.233" endtime="20210530 21:12:43.234"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<status status="NOT RUN" starttime="20210530 21:12:43.234" endtime="20210530 21:12:43.234"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<status status="NOT RUN" starttime="20210530 21:12:43.234" endtime="20210530 21:12:43.234"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:42.983" endtime="20210530 21:12:43.234"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:42.982" endtime="20210530 21:12:43.234">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<test id="s1-s13-t5" name="Wrong user wrong pwd">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>xyz</arg>
+<kw name="Input username" library="Testdata">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:43.236" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:43.243" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:43.238" endtime="20210530 21:12:43.244"/>
+</kw>
+<msg timestamp="20210530 21:12:43.244" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:43.246" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:43.236" endtime="20210530 21:12:43.246"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:43.235" endtime="20210530 21:12:43.247"/>
+</kw>
+<kw name="Input password" library="Testdata">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20210530 21:12:43.247" endtime="20210530 21:12:43.247"/>
+</kw>
+<kw name="Click login button" library="Testdata">
+<status status="NOT RUN" starttime="20210530 21:12:43.247" endtime="20210530 21:12:43.247"/>
+</kw>
+<kw name="Error message should be visible" library="Testdata">
+<status status="NOT RUN" starttime="20210530 21:12:43.247" endtime="20210530 21:12:43.247"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:43.235" endtime="20210530 21:12:43.247"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:43.235" endtime="20210530 21:12:43.248">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<kw name="Close my browser" library="Testdata" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210530 21:12:43.249" endtime="20210530 21:12:45.875"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:43.248" endtime="20210530 21:12:45.875"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:25.517" endtime="20210530 21:12:45.875"/>
+</suite>
+<suite id="s1-s14" name="DropdownListbox" source="C:\Users\40006197\PycharmProjects\robot\TestCases\DropdownListbox.robot">
+<test id="s1-s14-t1" name="Verify dropdown">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.practiceselenium.com/practice-form.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:43.497" level="INFO">Opening browser 'chrome' to base url 'http://www.practiceselenium.com/practice-form.html'.</msg>
+<status status="PASS" starttime="20210530 21:12:43.497" endtime="20210530 21:12:53.517"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:53.542" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:53.522" endtime="20210530 21:12:53.542"/>
+</kw>
+<msg timestamp="20210530 21:12:53.543" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:53.547" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:53.518" endtime="20210530 21:12:53.548"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>USA</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20210530 21:12:53.548" endtime="20210530 21:12:53.549"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20210530 21:12:53.549" endtime="20210530 21:12:53.549"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Browser Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20210530 21:12:53.549" endtime="20210530 21:12:53.549"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20210530 21:12:53.550" endtime="20210530 21:12:53.550"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:43.496" endtime="20210530 21:12:53.550">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:12:43.130" endtime="20210530 21:12:53.748"/>
+</suite>
+<suite id="s1-s15" name="ForLoop" source="C:\Users\40006197\PycharmProjects\robot\TestCases\ForLoop.robot">
+<test id="s1-s15-t1" name="Forloop1">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.130" endtime="20210530 21:12:47.130"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.130" endtime="20210530 21:12:47.130"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.130" endtime="20210530 21:12:47.131"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.130" endtime="20210530 21:12:47.131"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.131" endtime="20210530 21:12:47.131"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.131" endtime="20210530 21:12:47.131"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.131" endtime="20210530 21:12:47.132"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.131" endtime="20210530 21:12:47.132"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.132" endtime="20210530 21:12:47.132"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.132" endtime="20210530 21:12:47.132"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.132" endtime="20210530 21:12:47.132"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.132" endtime="20210530 21:12:47.132"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.133" endtime="20210530 21:12:47.133"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.132" endtime="20210530 21:12:47.133"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.133" endtime="20210530 21:12:47.133"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.133" endtime="20210530 21:12:47.133"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.133" endtime="20210530 21:12:47.134"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.133" endtime="20210530 21:12:47.134"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.129" endtime="20210530 21:12:47.134"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.129" endtime="20210530 21:12:47.134"/>
+</test>
+<test id="s1-s15-t2" name="Forloop2">
+<for flavor="IN">
+<var>${i}</var>
+<value>1</value>
+<value>2</value>
+<value>3</value>
+<value>4</value>
+<value>5</value>
+<value>6</value>
+<value>7</value>
+<value>8</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.157" endtime="20210530 21:12:47.157"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i}==1</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<msg timestamp="20210530 21:12:47.158" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210530 21:12:47.158" endtime="20210530 21:12:47.158"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.157" endtime="20210530 21:12:47.158"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.156" endtime="20210530 21:12:47.158"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.134" endtime="20210530 21:12:47.159"/>
+</test>
+<test id="s1-s15-t3" name="Forloop3">
+<kw name="Create List" library="BuiltIn">
+<var>${list}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20210530 21:12:47.159" level="INFO">${list} = ['1', '2', '3', '4']</msg>
+<status status="PASS" starttime="20210530 21:12:47.159" endtime="20210530 21:12:47.159"/>
+</kw>
+<for flavor="IN">
+<var>${i}</var>
+<value>${list}</value>
+<iter>
+<var name="${i}">['1', '2', '3', '4']</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.160" endtime="20210530 21:12:47.160"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i}==1</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20210530 21:12:47.160" endtime="20210530 21:12:47.160"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.160" endtime="20210530 21:12:47.160"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.160" endtime="20210530 21:12:47.160"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.159" endtime="20210530 21:12:47.160"/>
+</test>
+<test id="s1-s15-t4" name="Forloop4">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>5</value>
+<iter>
+<var name="${i}">1</var>
+<for flavor="IN RANGE">
+<var>${j}</var>
+<value>1</value>
+<value>3</value>
+<iter>
+<var name="${j}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.161" endtime="20210530 21:12:47.162"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.161" endtime="20210530 21:12:47.162"/>
+</iter>
+<iter>
+<var name="${j}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.162" endtime="20210530 21:12:47.162"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.162" endtime="20210530 21:12:47.162"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.161" endtime="20210530 21:12:47.162"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.161" endtime="20210530 21:12:47.162"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<for flavor="IN RANGE">
+<var>${j}</var>
+<value>1</value>
+<value>3</value>
+<iter>
+<var name="${j}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.163" endtime="20210530 21:12:47.163"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.163" endtime="20210530 21:12:47.163"/>
+</iter>
+<iter>
+<var name="${j}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.163" endtime="20210530 21:12:47.163"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.163" endtime="20210530 21:12:47.163"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.163" endtime="20210530 21:12:47.163"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.162" endtime="20210530 21:12:47.163"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<for flavor="IN RANGE">
+<var>${j}</var>
+<value>1</value>
+<value>3</value>
+<iter>
+<var name="${j}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.164" endtime="20210530 21:12:47.164"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.164" endtime="20210530 21:12:47.164"/>
+</iter>
+<iter>
+<var name="${j}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.164" endtime="20210530 21:12:47.165"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.164" endtime="20210530 21:12:47.165"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.164" endtime="20210530 21:12:47.165"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.164" endtime="20210530 21:12:47.165"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<for flavor="IN RANGE">
+<var>${j}</var>
+<value>1</value>
+<value>3</value>
+<iter>
+<var name="${j}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.165" endtime="20210530 21:12:47.165"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.165" endtime="20210530 21:12:47.165"/>
+</iter>
+<iter>
+<var name="${j}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210530 21:12:47.165" endtime="20210530 21:12:47.166"/>
+</kw>
+<status status="PASS" starttime="20210530 21:12:47.165" endtime="20210530 21:12:47.166"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.165" endtime="20210530 21:12:47.166"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.165" endtime="20210530 21:12:47.166"/>
+</iter>
+<status status="PASS" starttime="20210530 21:12:47.161" endtime="20210530 21:12:47.166"/>
+</for>
+<status status="PASS" starttime="20210530 21:12:47.161" endtime="20210530 21:12:47.166"/>
+</test>
+<status status="PASS" starttime="20210530 21:12:47.127" endtime="20210530 21:12:47.167"/>
+</suite>
+<suite id="s1-s16" name="Frames" source="C:\Users\40006197\PycharmProjects\robot\TestCases\Frames.robot">
+<test id="s1-s16-t1" name="Frames Testing">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:48.710" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html'.</msg>
+<status status="PASS" starttime="20210530 21:12:48.710" endtime="20210530 21:12:54.579"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20210530 21:12:54.580" level="INFO">Selecting frame 'packageListFrame'.</msg>
+<status status="PASS" starttime="20210530 21:12:54.580" endtime="20210530 21:12:54.652"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:54.652" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
+<status status="PASS" starttime="20210530 21:12:54.652" endtime="20210530 21:12:54.854"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20210530 21:12:54.854" endtime="20210530 21:12:54.857"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>classFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20210530 21:12:54.859" level="INFO">Selecting frame 'classFrame'.</msg>
+<status status="PASS" starttime="20210530 21:12:54.858" endtime="20210530 21:12:55.377"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210530 21:12:55.378" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
+<status status="PASS" starttime="20210530 21:12:55.377" endtime="20210530 21:12:56.459"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:12:56.475" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:56.463" endtime="20210530 21:12:56.476"/>
+</kw>
+<msg timestamp="20210530 21:12:56.476" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:56.695" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:56.460" endtime="20210530 21:12:56.695"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:48.708" endtime="20210530 21:12:56.695">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:12:48.364" endtime="20210530 21:12:56.778"/>
+</suite>
+<suite id="s1-s17" name="GetAllLinks" source="C:\Users\40006197\PycharmProjects\robot\TestCases\GetAllLinks.robot">
+<test id="s1-s17-t1" name="Get Links">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demo.guru99.com/test/newtours/index.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:55.344" level="INFO">Opening browser 'chrome' to base url 'http://demo.guru99.com/test/newtours/index.php'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:01.551" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:59.514" endtime="20210530 21:13:01.552"/>
+</kw>
+<msg timestamp="20210530 21:13:01.552" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:01.555" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:55.344" endtime="20210530 21:13:01.555"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:01.556" endtime="20210530 21:13:01.556"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${link_count}</var>
+<arg>xpath://a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:01.556" endtime="20210530 21:13:01.556"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${link_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:01.556" endtime="20210530 21:13:01.556"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${link_count}</value>
+<iter>
+<var name="${i}">${i}</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${link}</var>
+<arg>xpath:(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:01.557" endtime="20210530 21:13:01.557"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${link}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:01.557" endtime="20210530 21:13:01.557"/>
+</kw>
+<status status="NOT RUN" starttime="20210530 21:13:01.557" endtime="20210530 21:13:01.557"/>
+</iter>
+<status status="NOT RUN" starttime="20210530 21:13:01.556" endtime="20210530 21:13:01.557"/>
+</for>
+<status status="FAIL" starttime="20210530 21:12:55.343" endtime="20210530 21:13:01.558">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:12:55.072" endtime="20210530 21:13:01.564"/>
+</suite>
+<suite id="s1-s18" name="InputBox" source="C:\Users\40006197\PycharmProjects\robot\TestCases\InputBox.robot">
+<test id="s1-s18-t1" name="TestingInputBox">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:12:58.650" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:03.980" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:01.945" endtime="20210530 21:13:03.980"/>
+</kw>
+<msg timestamp="20210530 21:13:03.980" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:04.010" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:12:58.650" endtime="20210530 21:13:04.011"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.011" endtime="20210530 21:13:04.011"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>nopCommerce demo store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.011" endtime="20210530 21:13:04.012"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.012" endtime="20210530 21:13:04.012"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${email_text}</var>
+<arg>id:Email</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.012" endtime="20210530 21:13:04.012"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${email_text}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.013" endtime="20210530 21:13:04.013"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_text}</arg>
+<arg>pavanLtraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.013" endtime="20210530 21:13:04.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.013" endtime="20210530 21:13:04.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.014" endtime="20210530 21:13:04.014"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:04.014" endtime="20210530 21:13:04.014"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:12:58.649" endtime="20210530 21:13:04.014">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:12:58.295" endtime="20210530 21:13:04.076"/>
+</suite>
+<suite id="s1-s19" name="MouseActions" source="C:\Users\40006197\PycharmProjects\robot\TestCases\MouseActions.robot">
+<test id="s1-s19-t1" name="Mouse actions">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:03.244" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<status status="PASS" starttime="20210530 21:13:03.244" endtime="20210530 21:13:13.020"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:19.074" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:15.060" endtime="20210530 21:13:19.075"/>
+</kw>
+<msg timestamp="20210530 21:13:19.075" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:19.077" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:13.020" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath://span[@class='context-menu-one btn btn-neutral']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="HTML10"]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>draggable</arg>
+<arg>droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:03.186" endtime="20210530 21:13:19.077">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:02.688" endtime="20210530 21:13:19.130"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 19 executions.</doc>
+<status status="FAIL" starttime="20210530 21:12:07.135" endtime="20210530 21:14:23.766"/>
+</suite>
+<statistics>
+<total>
+<stat pass="18" fail="16" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+<stat pass="3" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="18" fail="16" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Alerts">Suites.Alerts</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="MultipleBrowsers">Suites.MultipleBrowsers</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="ScrollingPage">Suites.ScrollingPage</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s4" name="SetupTerdown">Suites.SetupTerdown</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s5" name="TC1">Suites.TC1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s6" name="TabbedWindows">Suites.TabbedWindows</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="Table">Suites.Table</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s8" name="Tags">Suites.Tags</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s9" name="UserKeywords">Suites.UserKeywords</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s10" name="Waits">Suites.Waits</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s11" name="Capturescreenshot">Suites.Capturescreenshot</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s12" name="Data Excel">Suites.Data Excel</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s13" name="DataDrivenTesting">Suites.DataDrivenTesting</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s14" name="DropdownListbox">Suites.DropdownListbox</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s15" name="ForLoop">Suites.ForLoop</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s16" name="Frames">Suites.Frames</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s17" name="GetAllLinks">Suites.GetAllLinks</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s18" name="InputBox">Suites.InputBox</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s19" name="MouseActions">Suites.MouseActions</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210530 21:12:24.361" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Press a button!
+Message: unexpected alert open: {Alert text : Press a button!}
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:12.161" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:18.053" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:28.796" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:25.202" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:14:12.415" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:14:23.761" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:14:21.950" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:25.521" level="ERROR">Error in file 'C:\Users\40006197\PycharmProjects\robot\TestCases\DataDrivenTesting.robot' on line 2: Importing library 'Selenium Library' failed: ModuleNotFoundError: No module named 'Selenium Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\40006197\AppData\Local\Programs\Python\Python39\Scripts\robot.exe
+  c:\users\40006197\appdata\local\programs\python\python39\python39.zip
+  c:\users\40006197\appdata\local\programs\python\python39\DLLs
+  c:\users\40006197\appdata\local\programs\python\python39\lib
+  c:\users\40006197\appdata\local\programs\python\python39
+  c:\users\40006197\appdata\local\programs\python\python39\lib\site-packages</msg>
+<msg timestamp="20210530 21:12:42.679" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:42.992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:43.244" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:53.543" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:12:56.476" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:01.552" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:03.980" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:19.075" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+</errors>
+</robot>

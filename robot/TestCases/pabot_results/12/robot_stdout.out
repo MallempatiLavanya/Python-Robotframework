@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.SetupTerdown                                                           
+==============================================================================
+Opening browser
+TC1                                                                   Login to application
+This is TC1
+Logout to application
+| PASS |
+------------------------------------------------------------------------------
+TC2                                                                   Login to application
+This is TC2
+Logout to application
+| PASS |
+------------------------------------------------------------------------------
+Closing browser
+Suites.SetupTerdown                                                   | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\40006197\PycharmProjects\robot\TestCases\pabot_results\12\output.xml

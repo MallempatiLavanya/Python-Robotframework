@@ -1,0 +1,17 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.GetAllLinks                                                            
+==============================================================================
+Get Links                                                             | FAIL |
+WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+------------------------------------------------------------------------------
+Suites.GetAllLinks                                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\40006197\PycharmProjects\robot\TestCases\pabot_results\7\output.xml

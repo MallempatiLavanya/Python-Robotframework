@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.9.1 on win32)" generated="20210530 21:13:02.388" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="MouseActions" source="C:\Users\40006197\PycharmProjects\robot\TestCases\MouseActions.robot">
+<test id="s1-s1-t1" name="Mouse actions">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210530 21:13:03.244" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<status status="PASS" starttime="20210530 21:13:03.244" endtime="20210530 21:13:13.020"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210530 21:13:19.074" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:15.060" endtime="20210530 21:13:19.075"/>
+</kw>
+<msg timestamp="20210530 21:13:19.075" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<msg timestamp="20210530 21:13:19.077" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+<status status="FAIL" starttime="20210530 21:13:13.020" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath://span[@class='context-menu-one btn btn-neutral']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="HTML10"]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>draggable</arg>
+<arg>droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="NOT RUN" starttime="20210530 21:13:19.077" endtime="20210530 21:13:19.077"/>
+</kw>
+<status status="FAIL" starttime="20210530 21:13:03.186" endtime="20210530 21:13:19.077">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</status>
+</test>
+<status status="FAIL" starttime="20210530 21:13:02.688" endtime="20210530 21:13:19.130"/>
+</suite>
+<status status="FAIL" starttime="20210530 21:13:02.552" endtime="20210530 21:13:19.131"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="MouseActions">Suites.MouseActions</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210530 21:13:19.075" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.77)
+</msg>
+</errors>
+</robot>

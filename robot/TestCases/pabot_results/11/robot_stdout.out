@@ -1,0 +1,17 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.ScrollingPage                                                          
+==============================================================================
+Scrolling tests                                                       | FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+------------------------------------------------------------------------------
+Suites.ScrollingPage                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\40006197\PycharmProjects\robot\TestCases\pabot_results\11\output.xml

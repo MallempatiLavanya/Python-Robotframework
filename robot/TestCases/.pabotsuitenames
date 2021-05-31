@@ -1,0 +1,23 @@
+datasources:7559c9857baf8487d682d1effc7ba96e8042636c
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:62ed3070417b0a1622128533e1be3ccb8a25f6a3
+--suite Suites.Alerts
+--suite Suites.Capturescreenshot
+--suite Suites.Data Excel
+--suite Suites.DataDrivenTesting
+--suite Suites.DropdownListbox
+--suite Suites.ForLoop
+--suite Suites.Frames
+--suite Suites.GetAllLinks
+--suite Suites.InputBox
+--suite Suites.MouseActions
+--suite Suites.MultipleBrowsers
+--suite Suites.ScrollingPage
+--suite Suites.SetupTerdown
+--suite Suites.TC1
+--suite Suites.TabbedWindows
+--suite Suites.Table
+--suite Suites.Tags
+--suite Suites.UserKeywords
+--suite Suites.Waits
