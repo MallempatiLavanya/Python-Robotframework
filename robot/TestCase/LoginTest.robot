@@ -11,6 +11,7 @@ ${pwd}    tutorial
 
 *** Test Cases ***
 Login Test
+    [Tags]    Sanity
     Open my browser     ${url}  ${browser}
     Enter username    ${user}
     Enter password    ${pwd}
